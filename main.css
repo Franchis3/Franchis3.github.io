@@ -91,7 +91,7 @@ body {
 .nav li {
   display: inline;
   padding-right: 20px;
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 .nav li:last-child {
   padding-right: 0;

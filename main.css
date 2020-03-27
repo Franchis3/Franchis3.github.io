@@ -29,6 +29,7 @@ h3 {
 body {
   padding: 0px;
   margin: 0px;
+  font-family: arial, sans-serif;
 }
 .entrance {
   background-image: url(site_images/entrance_background.jpeg);

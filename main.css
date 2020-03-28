@@ -37,7 +37,10 @@ body {
   background-image: url(site_images/entrance_background.jpeg);
 }
 .logo {
-  text-align: left;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .nav {
   padding: 10px 10px 10px 10px;

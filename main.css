@@ -65,15 +65,16 @@ body {
   padding-top: 50px;
 }
 .picture-row {
-  height: 500px;
+  height: 900px;
+  justify-content: center;
 }
 .player-container {
   float: left;
-  width: 50%;
+  width: 600px;
   padding: 5px;
 }
 .season-container {
   float: right;
-  width: 50%;
+  width: 600px;
   padding: 5px;
 }

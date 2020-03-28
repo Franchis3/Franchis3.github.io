@@ -62,7 +62,7 @@ body {
   height: 80px;
 }
 .content-section{
-
+  padding-top: 50px;
 }
 .bio-pic {
   list-style-type: none;

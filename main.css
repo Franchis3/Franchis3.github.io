@@ -70,12 +70,12 @@ body {
   display: flex;
 }
 .player-container {
-  height 100%;
+  height: 100%;
   padding: 5px;
   width: auto;
 }
 .season-container {
-  height 100%;
+  height: 100%;
   padding: 5px;
   width: auto;
 }

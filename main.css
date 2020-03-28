@@ -64,7 +64,13 @@ body {
 .content-section{
   padding-top: 50px;
 }
-.bio-pic {
-  list-style-type: none;
-  width: 1%;
+.player-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.season-container {
+  float: left;
+  width: 50%;
+  padding: 5px;
 }

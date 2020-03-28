@@ -39,8 +39,10 @@ body {
 .logo {
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 5;
+  top: 5;
+  right: 5;
+  bottom: 5;
 }
 .nav {
   padding: 10px 10px 10px 10px;
@@ -58,7 +60,7 @@ body {
 }
 .header {
   background-color: #C8102E;
-  height: auto;
+  height: 80px;
 }
 .content-section{
 

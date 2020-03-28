@@ -67,14 +67,15 @@ body {
 .picture-row {
   height: 900px;
   justify-content: center;
+  display: flex;
 }
 .player-container {
-  float: left;
-  width: 600px;
+  height 100%;
   padding: 5px;
+  width: auto;
 }
 .season-container {
-  float: right;
-  width: 600px;
+  height 100%;
   padding: 5px;
+  width: auto;
 }

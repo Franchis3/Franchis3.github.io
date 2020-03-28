@@ -36,6 +36,9 @@ body {
 .entrance {
   background-image: url(site_images/entrance_background.jpeg);
 }
+.logo {
+  text-align: left;
+}
 .nav {
   padding: 10px 10px 10px 10px;
   color: white;

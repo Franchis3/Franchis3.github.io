@@ -47,13 +47,15 @@ body {
   text-align: center;
   height: 80px;
 }
+.nav:hover {
+  color: #951010;
+}
 .nav li {
   color: #FFFFFF;
   display: inline;
   font-size: 20px;
   padding-right: 20px;
   text-align: center;
-  height: 80px;
 }
 .nav li:last-child {
   padding-right: 0;

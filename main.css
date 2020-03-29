@@ -47,7 +47,7 @@ body {
   text-align: center;
   height: 80px;
 }
-.nav:hover {
+.nav:active {
   color: #951010;
 }
 .nav li {
@@ -60,7 +60,7 @@ body {
 .nav li:last-child {
   padding-right: 0;
 }
-.nav li:hover {
+.nav li:active {
   background-color:white;
   color: #951010;
 }

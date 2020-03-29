@@ -63,13 +63,13 @@ body {
 */
 .nav {
   text-align: center;
+  background-color: #951010;
 }
 ul {
   list-style-type: none;
-  margin-left: 50%;
+  margin-left: 30%;
   padding: 0;
   overflow: hidden;
-  background-color: #951010;
   text-align: center;
 }
 li {

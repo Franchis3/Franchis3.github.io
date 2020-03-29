@@ -12,6 +12,11 @@ a {
   text-decoration: none;
   color: white;
 }
+li a.active {
+  color: #951010;
+  background-color: white;
+
+}
 p {
   color: dimgray;
 }
@@ -47,9 +52,7 @@ body {
   text-align: center;
   height: 80px;
 }
-.nav:active {
-  color: #951010;
-}
+
 .nav li {
   color: #FFFFFF;
   display: inline;
@@ -59,10 +62,6 @@ body {
 }
 .nav li:last-child {
   padding-right: 0;
-}
-.nav li:active {
-  background-color:white;
-  color: #951010;
 }
 .header {
   background-color: #951010;

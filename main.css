@@ -45,7 +45,7 @@ body {
   height: 80px;
 }
 
-.nav li {
+/*.nav li {
   color: #FFFFFF;
   display: inline;
   font-size: 20px;
@@ -54,7 +54,7 @@ body {
 }
 .nav li:last-child {
   padding-right: 0;
-}
+}*/
 .header {
   background-color: #951010;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);

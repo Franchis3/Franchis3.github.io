@@ -60,14 +60,14 @@ body {
   padding: 5px;
   width: auto;
 }
-
 .nav {
   text-align: center;
   background-color: #951010;
+  height: 80px;
 }
 ul {
   list-style-type: none;
-  margin-left: 30%;
+  margin-left: 35%;
   padding: 0;
   overflow: hidden;
   text-align: center;

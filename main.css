@@ -71,9 +71,10 @@ ul {
   overflow: hidden;
   background-color: #951010;
   text-align: center;
+  left: 50%;
 }
 li {
-  text-align: center;
+  text-align: left;
 }
 
 li a {

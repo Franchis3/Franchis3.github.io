@@ -26,6 +26,8 @@ h1 {
   border-bottom: 1px solid #aaaaaa;
   background-color: #fDC82F;
   padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
 }
 
 
@@ -68,7 +70,7 @@ h1 {
 	background-color: #951010;
 	height: 80px;
   width: 100%;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   /* fix navbar to top of screen */
   position: fixed;
   top: 0;
@@ -82,15 +84,11 @@ h1 {
 .navigation-bar li    {
 	list-style-type: none;
 	padding: 0px;
-	height: 24px;
-	margin-top: 4px;
-	margin-bottom: 4px;
   display:inline;
-  
 }
 .navigation-bar li a    {
 	color: #FFF;
-	font-size: 18px;
+	font-size: 20px;
 	text-transform: uppercase;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	text-decoration: none;
@@ -109,3 +107,29 @@ h1 {
   background-color: white;
   color: #951010;
 }
+
+
+
+/************************* IDs *************************/
+#hiltonmagic {
+  border-radius: 25px;
+  animation-name: bounce;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  height: auto;
+  max-width: 100%;
+}
+#hiltonmagic:hover {
+  transform: scale(1.1);
+}
+/*@keyframes bounce {
+  25% {
+    transform: scale(.75);
+  }
+  50% {
+    transform: scale(.5);
+  }
+  75% {
+    transform: scale(.25);
+  }
+}*/

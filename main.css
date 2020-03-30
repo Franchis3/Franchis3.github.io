@@ -13,38 +13,63 @@ a {
   color: white;
 }
 
-p {
-  color: dimgray;
-}
-h1 {
-  font-size: 28px;
-  color: darkblue;
-  border-bottom: 1px solid #aaaaaa;
-}
-h3 {
-  font-size: 26px;
-  color: darkblue;
-}
 body {
   padding: 0px;
   margin: 0px;
   font-family: arial, sans-serif;
   text-align: center;
 }
+
+h1 {
+  font-size: 28px;
+  color: darkblue;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+
+/*
+li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+/*
+li a:hover {
+  background-color: white;
+  color: #951010;
+}
+
+p {
+  color: dimgray;
+}
+
+ul {
+  height: 80px;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/************************* Classes *************************/
+.content-section { 
+  padding-top: 100px;
+}
+
+.header {
+  background-color: #951010;
+  height: 80px;
+}
+
 .logo {
   display: block;
   position: absolute;
   padding: 5px;
 }
 
-.header {
-  background-color: #951010;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  height: 80px;
-}
-.content-section { 
-  padding-top: 50px;
-}
 .picture-row {
   height: 900px;
   justify-content: center;
@@ -60,35 +85,51 @@ body {
   padding: 5px;
   width: auto;
 }
-.nav {
-  text-align: center;
-  background-color: #951010;
-  height: 80px;
-}
-ul {
-  height: 80px;
-  list-style-type: none;
-  margin-left: 50%;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
-}
-li {
-  float: left;
-  padding-top: 20px;
-  text-align: center;
+
+
+
+/* ~~ Top Navigation Bar ~~ */
+.navigation-bar   {
+	background-color: #951010;
+	height: 80px;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  position: fixed;
+  top: 0;
 }
 
-li a {
-  display: inline-block;
-  color: white;
-  font-size: 20px;
-  padding: 8px 16px;
-  text-decoration: none;
-  text-align: center;
+.navigation-bar ul   {
+	padding: 0px;
+	margin: 0px;
+  text-align:center;
 }
-
-li a:hover {
+.navigation-bar li    {
+	list-style-type: none;
+	padding: 0px;
+	height: 24px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+  display:inline;
+  
+}
+.navigation-bar li a    {
+	color: #FFF;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	box-shadow: 2xp 2px 3px inset;
+	border-radius: 5px;
+	padding-right: 1em;
+	padding-left: 1em;
+	line-height: 4.5em;
+	margin-right: 16px;
+}
+.navigation-bar li:first-child {
+	margin-left:20px;
+	border:#C00;
+}
+.navigation-bar li a:hover {
   background-color: white;
   color: #951010;
 }

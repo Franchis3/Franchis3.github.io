@@ -1,3 +1,4 @@
+/*** CSS Reset ***/
 * {
   margin: 0;
   padding: 0;
@@ -8,62 +9,13 @@
   background: transparent;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
+/* ~~ Main ~~ */
 body {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-family: arial, sans-serif;
   text-align: center;
 }
-
-h1 {
-  font-size: 28px;
-  color: #951010;
-  border-bottom: 1px solid #aaaaaa;
-  background-color: #fDC82F;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 50px;
-}
-
-
-/************************* Classes *************************/
-.content-section { 
-  padding-top: 80px;
-}
-
-.header {
-  background-color: #951010;
-  height: 80px;
-}
-
-.logo {
-  display: block;
-  position: absolute;
-  padding: 5px;
-}
-
-.picture-row {
-  height: 900px;
-  justify-content: center;
-  display: flex;
-}
-.player-container {
-  height: 100%;
-  padding: 5px;
-  width: auto;
-}
-.season-container {
-  height: 100%;
-  padding: 5px;
-  width: auto;
-}
-
-
 
 /* ~~ Top Navigation Bar ~~ */
 .navigation-bar   {
@@ -101,11 +53,77 @@ h1 {
 }
 .navigation-bar li:first-child {
 	margin-left:20px;
-	border:#C00;
 }
 .navigation-bar li a:hover {
   background-color: white;
   color: #951010;
+}
+
+h1 {
+  font-size: 28px;
+  color: #951010;
+  border-bottom: 1px solid #aaaaaa;
+  background-color: #fDC82F;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 30px;
+  padding-bottom: 23px;
+}
+
+
+/************************* Classes *************************/
+.content-section { 
+  padding-top: 80px;
+}
+
+.header {
+  background-color: #951010;
+  height: 80px;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  padding: .3%;
+}
+
+.picture-row {
+  height: 900px;
+  justify-content: center;
+  display: flex;
+}
+.player-container {
+  height: 100%;
+  padding: 5px;
+  width: auto;
+}
+.season-container {
+  height: 100%;
+  padding: 5px;
+  width: auto;
+}
+
+
+
+
+
+/* ~~ Footer Navigation Bar ~~ */
+.footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  background-color: #951010;
+  color: white;
+  height: 80px;
 }
 
 
@@ -133,3 +151,98 @@ h1 {
     transform: scale(.25);
   }
 }*/
+
+
+/* ~~ Footer ~~ */
+.footer-info {
+  margin-top: 15px;
+}
+
+.rounded-social-buttons {
+  text-align: right;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.fa-linkedin {
+  background: #951010
+  color: white;
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #951010;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #951010;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #951010;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #951010;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #951010;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #000000;
+  background: #fefefe;
+  border-color: #000000;
+}

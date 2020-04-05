@@ -1,4 +1,4 @@
-/*** CSS Reset ***/
+/* ~~~~~~~~~~ CSS Reset ~~~~~~~~~~ */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@
   background: transparent;
 }
 
-/* ~~ Main ~~ */
+/* ~~~~~~~~~~ Main ~~~~~~~~~~ */
 body {
   padding: 0;
   margin: 0;
@@ -17,10 +17,9 @@ body {
   text-align: center;
 }
 
-/* ~~ Top Navigation Bar ~~ */
+/* ~~~~~~~~~~ Top Navigation Bar ~~~~~~~~~~ */
 .navigation-bar   {
 	background-color: #951010;
-	height: 80px;
   width: 100%;
   box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   /* fix navbar to top of screen */
@@ -29,15 +28,18 @@ body {
 }
 
 .navigation-bar ul   {
-	padding: 0px;
-	margin: 0px;
+	padding: 0%;
+	margin: 0%;
   text-align:center;
 }
+
 .navigation-bar li    {
 	list-style-type: none;
-	padding: 0px;
-  display:inline;
+  padding: 0%;
+  /* ensures the li element takes up entire ul element (for hover) */
+  display:inline-block;
 }
+
 .navigation-bar li a    {
 	color: #FFF;
 	font-size: 20px;
@@ -49,13 +51,20 @@ body {
 	padding-right: 1em;
 	padding-left: 1em;
 	line-height: 4.5em;
-	margin-right: 16px;
+  margin-right: 16px;
+  display: block;
 }
+
 .navigation-bar li:first-child {
 	margin-left:20px;
 }
+
 .navigation-bar li a:hover {
   background-color: white;
+  color: #951010;
+}
+.navigation-bar li a.active {
+  background-color: #ffffff;
   color: #951010;
 }
 
@@ -69,19 +78,9 @@ h1 {
   margin-bottom: 50px;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 30px;
-  padding-bottom: 23px;
-}
-
-
-/************************* Classes *************************/
+/* ~~ Main Content ~~ */
 .content-section { 
-  padding-top: 80px;
+  padding-top: 5%;
 }
 
 .header {
@@ -112,22 +111,6 @@ a {
 }
 
 
-
-
-
-/* ~~ Footer Navigation Bar ~~ */
-.footer {
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  bottom: 0;
-  background-color: #951010;
-  color: white;
-  height: 80px;
-}
-
-
-
 /************************* IDs *************************/
 #hiltonmagic {
   border-radius: 25px;
@@ -153,9 +136,24 @@ a {
 }*/
 
 
-/* ~~ Footer ~~ */
-.footer-info {
-  margin-top: 15px;
+
+/* ~~ Footer Navigation Bar ~~ */
+.footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  background-color: #951010;
+  color: white;
+  height: 80px;
+}
+
+
+.footer .footer-content {
+  /* responsive padding */
+  padding-left: 10%;
+  padding-right: 10%;
+  display: inline-block;
 }
 
 .rounded-social-buttons {
@@ -189,7 +187,7 @@ a {
 }
 
 .fa-linkedin {
-  background: #951010
+  background: #951010;
   color: white;
 }
 

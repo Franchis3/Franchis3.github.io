@@ -20,35 +20,35 @@ body {
 
 
 /* ~~~~~~~~~~ Top Navigation Bar ~~~~~~~~~~ */
-.bar {
-  background-color: #951010;
-  width: 100%;
+header {
+  background-color: #951010; /* menu background color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
   box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  /* fix navbar to top of screen */
-  position: fixed;
-  top: 0;
 }
+
+.state {
+  cursor: pointer;
+}
+
 #nav {
-  width: 100%;
-  list-style: none inside;
-  margin:0%;
-  padding:0%;
-  text-align:center;
+  list-style: none;
 }
 
 #nav li {
-  display:inline-block; /* ensures the li element takes up entire ul element (for hover) */
+  display: inline-block;
   position:relative;
-  background: #951010; /* menu background color */
-  padding: 0%;
+  padding: 0px 20px;
 }
 
 #nav li a {
   display: block;
-  padding: ;
+  transition: all 0.3s ease 0s;
   text-decoration: none; /* can be used for an underline */
-  width:200px; /* this is the width of the menu items */
-  line-height:35px; /* this is the hieght of the menu items */
+  width: 200px; /* this is the width of the menu items */
+  line-height: 35px; /* this is the hieght of the menu items */
   color:#FFF; /* list item font color */
   font-size: 24px;
   line-height: 3em;
@@ -56,24 +56,24 @@ body {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   border-bottom: solid transparent;
-  transition: border-bottom .5s;
+  transition: border-bottom ease .5s;
+  transition: background ease .5s;
 }
 
 #nav li a:hover {
   /* highlights current hovered list item and the parent list items when hovering over sub menues */
- background:#ffffff;
- color: #951010;
- border-bottom: solid #fDC82F;
+  background:#ffffff;
+  color: #951010;
+  border-bottom: solid #fDC82F;
 }
-
+ 
 #nav li a.active {
   border-bottom: solid #fDC82F;
-}      
+}   
 
 #nav li li a {
   font-size: 80%; /* smaller font size for sub menu items */
-} 
-  
+}   
 
 /*--- Sublist Styles ---*/
 #nav ul {
@@ -81,26 +81,38 @@ body {
   padding: 0;
   left: 0;
   display: none; /* hides sublists */
-  }
+}
 
 #nav li:hover ul ul {
   display: none; /* hides sub-sublists */
 } 
 
+
 #nav li:hover ul {
   display: block; /* shows sublist on hover */
   box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background: #951010;
 } 
 
 #nav li li:hover ul {
   display: block; /* shows sub-sublist on hover */
-  margin-left: 200px; /* this should be the same width as the parent list item */
-  margin-top:-35px; /* aligns top of sub menu with top of list item */
-  }
+  margin-left: 240px; /* this should be the same width as the parent list item */
+  margin-top:-42px; /* aligns top of sub menu with top of list item */
+}
 
-
-
-
+button {
+  padding: 9px 25px;
+  background-color: #951010;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: #FFF;
+  color: #951010;
+}
 
 /* ~~~~~~~~~~ Main Content ~~~~~~~~~~ */
 .content-section { 
@@ -167,7 +179,6 @@ h1 {
     transform: scale(.25);
   }
 }*/
-
 
 
 /* ~~~~~~~~~ Footer  ~~~~~~~~~~ */

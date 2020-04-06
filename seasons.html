@@ -7,19 +7,33 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="navigation-bar">
-        <div class="logo">
-          <img src="site_images/iowa_state.png" alt="Cyclones">
-        </div>
-        <ul>
-        <li><a href= "index.html">Home</a></li>
-        <li><a href = "players.html">Players</a></li>
-        <li><a href = "teams.html">Teams</a></li>
-        <li><a href = "seasons.html">Seasons</a></li>
-        <li><a href = "analytics.html">Analytics</a></li>
-        <li><a href = "about.html">About</a></li>
+    <nav class="bar">
+      <div class="logo">
+          <img class="state" src="site_images/iowa_state.png" alt="Cyclones">
+      </div>
+      <ul id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="analytics.html" class="active">Analytics</a>
+            <ul>
+              <li><a href="players.html">Players</a></li>
+              <li><a href="teams.html">Teams</a></li>
+              <li><a href="seasons.html">Seasons &raquo;</a>
+                <ul>
+                  <li><a href="#">2020</a>
+                  <li><a href="#">2019</a>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a>
+            <ul>
+              <li><a href="about.html">Cyclones</a></li>
+              <li><a href="about.html">Background</a></li>
+              <li><a href="about.html">Contact</a></li>
+            </ul>
+          </li>
         </ul>
-      </nav>
+      </nav>   
     <div class="content-section">
       <header><h1>Cyclone Basketball to the Moon.... Under Construction</h1></header>
       <div class="team-container">

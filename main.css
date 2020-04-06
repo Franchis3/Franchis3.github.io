@@ -9,7 +9,8 @@
   background: transparent;
 }
 
-/* ~~~~~~~~~~ Main ~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~ */
 body {
   padding: 0;
   margin: 0;
@@ -17,68 +18,91 @@ body {
   text-align: center;
 }
 
+
 /* ~~~~~~~~~~ Top Navigation Bar ~~~~~~~~~~ */
-.navigation-bar   {
-	background-color: #951010;
+.bar {
+  background-color: #951010;
   width: 100%;
   box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   /* fix navbar to top of screen */
   position: fixed;
   top: 0;
 }
-
-.navigation-bar ul   {
-	padding: 0%;
-	margin: 0%;
+#nav {
+  width: 100%;
+  list-style: none inside;
+  margin:0%;
+  padding:0%;
   text-align:center;
 }
 
-.navigation-bar li    {
-	list-style-type: none;
+#nav li {
+  display:inline-block; /* ensures the li element takes up entire ul element (for hover) */
+  position:relative;
+  background: #951010; /* menu background color */
   padding: 0%;
-  /* ensures the li element takes up entire ul element (for hover) */
-  display:inline-block;
 }
 
-.navigation-bar li a    {
-	color: #FFF;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	text-decoration: none;
-	box-shadow: 2xp 2px 3px inset;
-	border-radius: 5px;
-	padding-right: 1em;
-	padding-left: 1em;
-	line-height: 4.5em;
-  margin-right: 16px;
+#nav li a {
   display: block;
+  padding: ;
+  text-decoration: none; /* can be used for an underline */
+  width:200px; /* this is the width of the menu items */
+  line-height:35px; /* this is the hieght of the menu items */
+  color:#FFF; /* list item font color */
+  font-size: 24px;
+  line-height: 3em;
+  box-shadow: 2xp 2px 3px inset;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  border-bottom: solid transparent;
+  transition: border-bottom .5s;
 }
 
-.navigation-bar li:first-child {
-	margin-left:20px;
+#nav li a:hover {
+  /* highlights current hovered list item and the parent list items when hovering over sub menues */
+ background:#ffffff;
+ color: #951010;
+ border-bottom: solid #fDC82F;
 }
 
-.navigation-bar li a:hover {
-  background-color: white;
-  color: #951010;
-}
-.navigation-bar li a.active {
-  background-color: #ffffff;
-  color: #951010;
-}
+#nav li a.active {
+  border-bottom: solid #fDC82F;
+}      
 
-h1 {
-  font-size: 28px;
-  color: #951010;
-  border-bottom: 1px solid #aaaaaa;
-  background-color: #fDC82F;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 50px;
-}
+#nav li li a {
+  font-size: 80%; /* smaller font size for sub menu items */
+} 
+  
 
-/* ~~ Main Content ~~ */
+/*--- Sublist Styles ---*/
+#nav ul {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  display: none; /* hides sublists */
+  }
+
+#nav li:hover ul ul {
+  display: none; /* hides sub-sublists */
+} 
+
+#nav li:hover ul {
+  display: block; /* shows sublist on hover */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+} 
+
+#nav li li:hover ul {
+  display: block; /* shows sub-sublist on hover */
+  margin-left: 200px; /* this should be the same width as the parent list item */
+  margin-top:-35px; /* aligns top of sub menu with top of list item */
+  }
+
+
+
+
+
+/* ~~~~~~~~~~ Main Content ~~~~~~~~~~ */
 .content-section { 
   padding-top: 5%;
 }
@@ -86,6 +110,14 @@ h1 {
 .header {
   background-color: #951010;
   height: 80px;
+}
+h1 {
+  font-size: 28px;
+  color: #951010;
+  border-bottom: 1px solid #aaaaaa;
+  background-color: #FFF;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -99,19 +131,19 @@ h1 {
   justify-content: center;
   display: flex;
 }
+
 .player-container {
   height: 100%;
   padding: 5px;
   width: auto;
 }
+
 .season-container {
   height: 100%;
   padding: 5px;
   width: auto;
 }
 
-
-/************************* IDs *************************/
 #hiltonmagic {
   border-radius: 25px;
   animation-name: bounce;
@@ -120,6 +152,7 @@ h1 {
   height: auto;
   max-width: 100%;
 }
+
 #hiltonmagic:hover {
   transform: scale(1.1);
 }
@@ -137,7 +170,7 @@ h1 {
 
 
 
-/* ~~ Footer Navigation Bar ~~ */
+/* ~~~~~~~~~ Footer  ~~~~~~~~~~ */
 .footer {
   position: fixed;
   width: 100%;
@@ -199,14 +232,27 @@ h1 {
   background: #951010;
 }
 
-.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
-  color: #3b5998;
-  background: #fefefe;
-  border-color: #3b5998;
+.rounded-social-buttons .social-button.linkedin {
+  background: #951010;
 }
 
 .rounded-social-buttons .social-button.twitter {
   background: #951010;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #951010;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #951010;
+}
+
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
 }
 
 .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
@@ -215,28 +261,16 @@ h1 {
   border-color: #55acee;
 }
 
-.rounded-social-buttons .social-button.linkedin {
-  background: #951010;
-}
-
 .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
   color: #007bb5;
   background: #fefefe;
   border-color: #007bb5;
 }
 
-.rounded-social-buttons .social-button.youtube {
-  background: #951010;
-}
-
 .rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
   color: #bb0000;
   background: #fefefe;
   border-color: #bb0000;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background: #951010;
 }
 
 .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
